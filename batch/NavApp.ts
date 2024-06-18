@@ -1,20 +1,20 @@
 const NAVIGATION_LINK: NavigationLink[] = [
   {
-    name: "Fresh2 init",
-    href: "/",
+    name: "Accordion with nested Accordion",
+    href: "/accordion/with-nested-accordion",
   },
   {
     name: "Accordion without nested Accordion",
     href: "/accordion/without-nested-accordion",
   },
   {
-    name: "Accordion with nested Accordion",
-    href: "/accordion/with-nested-accordion",
-  },
-  {
     name: "GitHub",
     href: "https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands",
   },
+  {
+    name: "Fresh2 init (example)",
+    href: "/fresh-2-init",
+  }
 ];
 
 interface NavigationLink {
