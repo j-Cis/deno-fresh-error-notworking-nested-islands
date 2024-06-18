@@ -24,5 +24,22 @@
     "asynciterable",
     "preact",
     "tailwindcss"
-  ]
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.folders.associations": {
+    "islands": "Animation"
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "search.exclude": {
+    "**/.history": true
+  },
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "450",
+  "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+  "cSpell.language": "en, pl"
 }

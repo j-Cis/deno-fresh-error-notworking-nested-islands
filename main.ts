@@ -1,8 +1,10 @@
-import { App, staticFiles, fsRoutes } from "fresh";
-import { State } from "./utils.ts";
+import { App, fsRoutes, staticFiles, trailingSlashes } from "@fresh/core";
+import define from "$utils/fresh.ts";
+import type { State } from "$utils/fresh.ts";
 
-export const app = new App<State>();
-app.use(staticFiles());
+export const app = new App<State>({ root: import.meta.url })
+  .use(staticFiles())
+  .use(trailingSlashes("never"));
 
 app.get("/api/:joke", () => new Response("Hello World"));
 
