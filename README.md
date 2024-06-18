@@ -1,4 +1,3 @@
-
 # Deno Fresh 2
 
 > ```PowerShell
@@ -43,6 +42,8 @@ Maybe it's my not understanding. I expected a different action.
 **Thank you in advance for your support.**
 
 [**The defective this operation can be checked here:** (https://deno-fresh2-errors.deno.dev/accordion/with-nested-accordion)](https://deno-fresh2-errors.deno.dev/accordion/with-nested-accordion)
+
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge.svg)](https://fresh.deno.dev)
 
 ---
 ---
