@@ -43,7 +43,7 @@ Maybe it's my not understanding. I expected a different action.
 
 [**The defective this operation can be checked here:** (https://deno-fresh2-errors.deno.dev/accordion/with-nested-accordion)](https://deno-fresh2-errors.deno.dev/accordion/with-nested-accordion)
 
-[![Made with Fresh](https://fresh.deno.dev/fresh-badge.svg)](https://fresh.deno.dev)
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge.svg)](https://jsr.io/@fresh/core@2.0.0-alpha.16)
 
 ---
 ---
