@@ -2,6 +2,7 @@
 
 - [GitHub Code of `deno fresh error: not working nested islands`](https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands)
 - [GithHub View (by Deno Deploy) of `deno fresh error: not working nested islands`](https://deno-fresh2-errors.deno.dev/)
+- [Deno Deploy of `deno fresh error: not working nested islands`](https://dash.deno.com/projects/deno-fresh2-errors)
 
 
 # [step by step] 
