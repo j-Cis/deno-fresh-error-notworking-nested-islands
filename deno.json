@@ -6,24 +6,18 @@
     "start": "deno run -A main.ts",
     "update": "deno run -A -r jsr:@fresh/update ."
   },
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
-  "exclude": [
-    "**/_fresh/*"
-  ],
   "imports": {
-    "fresh": "jsr:@fresh/core@^2.0.0-alpha.16",
+    "@fresh/core": "jsr:@fresh/core@^2.0.0-alpha.16",
     "@fresh/plugin-tailwind": "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
     "preact": "npm:preact@^10.22.0",
+    "@preact": "npm:preact@^10.22.0",
     "@preact/signals": "npm:@preact/signals@^1.2.3",
-    "tailwindcss": "npm:tailwindcss@3.4.3",
-    "tailwindcss/plugin": "npm:tailwindcss@3.4.3/plugin.js"
+    "@tailwindcss": "npm:tailwindcss@3.4.3",
+    "@tailwindcss/plugin": "npm:tailwindcss@3.4.3/plugin.js",
+    "$utils/": "./utils/",
+    "$types/": "./types/",
+    "$islands/": "./islands/",
+    "$components/": "./components/"
   },
   "compilerOptions": {
     "lib": [
@@ -41,5 +35,16 @@
       "html",
       "head"
     ]
-  }
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
+    }
+  },
+  "exclude": [
+    "**/_fresh/*"
+  ]
 }

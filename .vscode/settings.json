@@ -1,6 +1,9 @@
 {
   "deno.enable": true,
   "deno.lint": true,
+  "files.readonlyInclude": {
+      "deno.lock": true
+  },
   "editor.defaultFormatter": "denoland.vscode-deno",
   "[typescriptreact]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
@@ -16,5 +19,10 @@
   },
   "css.customData": [
     ".vscode/tailwind.json"
+  ],
+  "cSpell.words": [
+    "asynciterable",
+    "preact",
+    "tailwindcss"
   ]
 }

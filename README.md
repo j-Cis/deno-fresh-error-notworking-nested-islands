@@ -1,4 +1,9 @@
-# step by step 
+# deno fresh error: not working nested islands.
+
+- [GitHub Code: "deno fresh error: not working nested islands"](https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands)
+
+
+# [step by step] 
 
 ## 1 - init blank Fresh project by `PowerShell`
 > 
