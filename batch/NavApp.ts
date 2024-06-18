@@ -1,19 +1,19 @@
 const NAVIGATION_LINK: NavigationLink[] = [
   {
-    name: "fresh init blank app - example",
+    name: "Fresh2 init",
     href: "/",
   },
   {
-    name: "Pobierz",
-    href: "/wydanie",
+    name: "Accordion without nested Accordion",
+    href: "/accordion/without-nested-accordion",
   },
   {
-    name: "Skanoteka (oficjalna)",
-    href: "https://skanoteka.genealodzy.pl/",
+    name: "Accordion with nested Accordion",
+    href: "/accordion/with-nested-accordion",
   },
   {
-    name: "Skanoteka",
-    href: "/skanoteka",
+    name: "GitHub",
+    href: "https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands",
   },
 ];
 
