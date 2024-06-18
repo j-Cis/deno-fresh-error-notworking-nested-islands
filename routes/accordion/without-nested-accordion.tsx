@@ -1,4 +1,5 @@
 import { useSignal } from "@preact/signals";
+import { asset } from "@fresh/core/runtime";
 import define from "$utils/fresh.ts";
 import Layout from "$components/Layout.tsx";
 import AccordionItem from "$islands/AccordionItem.tsx";
@@ -49,7 +50,13 @@ export default define.page(function PageAccordionWithoutNestedAccordion(/*{url}*
           </AccordionItem>
       </AccordionContainer>
     }>
-      <div></div>
+      <div>
+      <img
+            class="my-6"
+            src={asset("/imgs/AccordionWithoutNestedAccordion.jpg")}
+            alt=""
+          />
+      </div>
     </Layout>
   );
 });
