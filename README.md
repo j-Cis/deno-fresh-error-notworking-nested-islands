@@ -1,32 +1,52 @@
-# deno fresh ...
 
-> 
+# Deno Fresh 2
+
 > ```PowerShell
-> run -Ar jsr:@fresh/init@2.0.0-alpha.16
+>   run -Ar jsr:@fresh/init@2.0.0-alpha.16
 > ```
 >
-> ### deno tasks
+> **deno tasks**
 >
 > - ` deno task check ` => `deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx`
 > - ` deno task dev ` => `deno run -A --watch=static/,routes/ dev.ts`
 > - ` deno task build ` => `deno run -A dev.ts build`
 > - ` deno task start ` => `deno run -A main.ts`
 > - ` deno task update ` => `deno run -A -r jsr:@fresh/update .`
-> 
 
 ---
 
-# **deno fresh error: not working nested islands**
+# **Islands components probably don't work properly when I nest an interactive component (Islands) in another**
 
-- [**GitHub Code of** "deno fresh error: not working nested islands"](https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands)
-- [**GithHub View (by Deno Deploy) of** "deno fresh error: not working nested islands"](https://deno-fresh2-errors.deno.dev/)
-- [**Deno Deploy of** "deno fresh error: not working nested islands"](https://dash.deno.com/projects/deno-fresh2-errors)
-- [**Deno Deploy process of** "deno fresh error: not working nested islands"](https://dash.deno.com/projects/deno-fresh2-errors/in_progress)
+- [**GitHub Code**](https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands)
+- [**GitHub View (by Deno Deploy)**](https://deno-fresh2-errors.deno.dev/)
+
+---
+
+- [**GitHub denoland/fresh: ISSUES/2521 OF THIS PROBLEM**](https://github.com/denoland/fresh/issues/2521)
+
+---
+
+- [**Deno Deploy**](https://dash.deno.com/projects/deno-fresh2-errors)
+- [**Deno Deploy process**](https://dash.deno.com/projects/deno-fresh2-errors/in_progress)
+
+---
+
+Islands components probably don't work properly when I nest an interactive component (Islands) in another.
+
+I wanted to create a multi-level accordian component, but I don't understand why it doesn't work as expected.
+
+When the same accordian component is single-level, everything works correctly. But the attempt to add a second level, brought an unexpected effect, freezing both levels.
+
+Maybe it's my not understanding. I expected a different action.
+ If my expectations were wrong, I don't quite understand what the problem is.
+
+**Thank you in advance for your support.**
 
 ---
 ---
+---
 
-## **1 :** `./components/AccordionContainer.tsx`.
+## **1 :** `./components/AccordionContainer.tsx`
 
 > ```TSX
 > import { ComponentChildren, h } from "preact";
@@ -52,7 +72,7 @@
 
 ---
 
-## **2 :** `./islands/AccordionItem.tsx`.
+## **2 :** `./islands/AccordionItem.tsx`
 
 > ```TSX
 > import type { Signal } from "@preact/signals";
@@ -142,11 +162,11 @@
 
 ---
 
-## **A :**  It does not work properly while the Accordion Component is nested in parent element of the Accordion Component.
+## **A :**  It does not work properly while the Accordion Component is nested in parent element of the Accordion Component
 
-> 
+>
 > ![Alt text](./static/imgs/AccordionWithNestedAccordion.jpg "It does not work > properly while the Accordion Component is nested in parent element of the Accordion Component")
-> 
+>
 > ### `./routes/accordion/with-nested-accordion.tsx`
 >
 > ```TSX
@@ -244,7 +264,7 @@
 >               </AccordionItem>
 >               <AccordionItem label="Item 2-B" labelIsLink={true} href="" show={showItem2B}>
 >                 <div>
->                       <strong>This is the "B" item's accordion body inside decond item body</strong> Lorem
+>                       <strong>This is the "B" item's accordion body inside second item body</strong> Lorem
 >                       ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu
 >                       rhoncus purus, vitae tincidunt nibh. Vivamus elementum egestas
 >                       ligula in varius. Proin ac erat pretium, ultricies leo at, cursus
@@ -274,15 +294,15 @@
 > });
 > ```
 
-----
+---
 
-## **B :** Works correctly when the Accordion component is not nested in the parent element of the Accordion Component.
+## **B :** Works correctly when the Accordion component is not nested in the parent element of the Accordion Component
 
-> 
+>
 > ![Alt text](./static/imgs/AccordionWithoutNestedAccordion.jpg "Works correctly > when the Accordion component is not nested in the parent element of the Accordion Component")
-> 
->  ### `./routes/accordion/without-nested-accordion.tsx`
-> 
+>
+> ### `./routes/accordion/without-nested-accordion.tsx`
+>
 > ```TSX
 > import { useSignal } from "@preact/signals";
 > import define from "$utils/fresh.ts";

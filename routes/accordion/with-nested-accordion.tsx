@@ -93,7 +93,7 @@ export default define.page(function PageAccordionWithNestedAccordion(/*{url}*/) 
               </AccordionItem>
               <AccordionItem label="Item 2-B" labelIsLink={true} href="" show={showItem2B}>
                 <div>
-                      <strong>This is the "B" item's accordion body inside decond item body</strong> Lorem
+                      <strong>This is the "B" item's accordion body inside second item body</strong> Lorem
                       ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu
                       rhoncus purus, vitae tincidunt nibh. Vivamus elementum egestas
                       ligula in varius. Proin ac erat pretium, ultricies leo at, cursus
