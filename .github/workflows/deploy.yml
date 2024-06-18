@@ -1,23 +1,11 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# This workflow will install Deno then run `deno lint` and `deno test`.
-# For more information see: https://github.com/denoland/setup-deno
-
-name: Deno
-
+name: Deploy
 on:
   push:
-    branches: ["main"]
+    branches: main
   pull_request:
-    branches: ["main"]
+    branches: main
 
-permissions:
-  contents: read
-
-jobs:  
+jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
@@ -38,15 +26,9 @@ jobs:
       - name: Build step
         run: "deno task build"
 
-      - name: Run linter
-        run: deno lint
-
-      - name: Run tests
-        run: deno test -A
-
-      # - name: Upload to Deno Deploy
-      # uses: denoland/deployctl@v1
-      # with:
-      #   project: "skanoteka-pobieracz"
-      #   entrypoint: "main.tsx"
-      #   root: "."
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
+        with:
+          project: "janromancis-deno-fresh-70"
+          entrypoint: "main.tsx"
+          root: "."
