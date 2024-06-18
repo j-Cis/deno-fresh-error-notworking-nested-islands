@@ -1,8 +1,9 @@
 import { App, fsRoutes, staticFiles, trailingSlashes } from "@fresh/core";
+
 import define from "$utils/fresh.ts";
 import type { State } from "$utils/fresh.ts";
 
-export const app = new App<State>({ root: import.meta.url })
+export const app = new App<State>({ root: import.meta.url})
   .use(staticFiles())
   .use(trailingSlashes("never"));
 

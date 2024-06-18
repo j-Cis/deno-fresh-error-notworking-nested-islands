@@ -12,7 +12,7 @@ tailwind(builder, app, {});
 if (Deno.args.includes("build")) {
   await builder.build(app);
 } else {
-  await builder.listen(app);
+  await builder.listen(app, {port:3000});
 }
 
 console.log(C.bgRed(`Now date is: ${new Date()}`));
