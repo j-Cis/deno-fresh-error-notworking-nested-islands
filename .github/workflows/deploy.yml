@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "janromancis-deno-fresh-70"
+          project: "deno-fresh2-errors"
           entrypoint: "main.ts"
           root: "."
