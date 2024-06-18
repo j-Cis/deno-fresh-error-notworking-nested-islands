@@ -8,8 +8,12 @@ const NAVIGATION_LINK: NavigationLink[] = [
     href: "/accordion/without-nested-accordion",
   },
   {
-    name: "GitHub",
+    name: "Repository of this on GitHub",
     href: "https://github.com/j-Cis/deno-fresh-error-notworking-nested-islands",
+  },
+  {
+    name: "Issue of this on GitHub denoland/fresh",
+    href: "https://github.com/denoland/fresh/issues/2521",
   },
   {
     name: "Fresh2 init (example)",
